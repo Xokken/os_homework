@@ -4,7 +4,7 @@ import random as rnd
 import time
 
 
-# author: Тыщенко Леонид, 11-902
+# Дьяконов Алексей, 11-902
 
 class Parent:
     @staticmethod
