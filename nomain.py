@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import os
 import time
-import random as rnd
+import random
 
 class Child:
     @staticmethod
@@ -10,11 +10,11 @@ class Child:
         print('Child, процесс с PID ', a, 'аргумент', arg)
         time.sleep(arg)
         print('Процесс с PID завершён', a)
-        b = rnd.randint(0, 1)
+        b = random.randint(0, 1)
         os._exit(b)
 
 
 def main():
-    Child.work(rnd.randint(5, 10))
+    Child.work(random.randint(5, 10))
 
 main()
